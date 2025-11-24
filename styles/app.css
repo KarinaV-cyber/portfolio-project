@@ -1,10 +1,44 @@
-h1
-{font-family: "Science Gothic", sans-serif;
-    font-weight: 500;
+h1,h2,h3,h4,h5,h6
+ {
+        font-family: "Love Ya Like A Sister", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
    
     
-    }
+    
 p{
-font-family: "Space Grotesk", sans-serif;
-    font-weight: 200;
+font-family: "Instrument Sans", sans-serif;
+    font-weight: medium;
+
+}
+.container{
+    background-color: rgb(182, 214, 118);
+    
+    
+}
+.btn-branding{
+    font-family: "Inter", sans-serif;
+    font-weight: medium;
+   background:  rgba(254, 128, 100, 1);
+   padding: 16px 12px;
+   color: rgba(26, 24, 24, 1);
+}
+.hero{
+    background-color: rgb(182, 214, 118);
+   
+}
+h1{
+       font-size: 64px;
+       color: rgba(0, 0, 0, 0.61);
+       line-height: 1.1;
+       font-weight: bold;
+
+      
+}
+p{
+    font-size: 28px;
+    line-height: 1.45;
+    color: rgba(0, 0, 0, 0.55);
+
 }
