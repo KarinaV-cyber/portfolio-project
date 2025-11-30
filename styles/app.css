@@ -1,36 +1,198 @@
-h1,h2,h3,h4,h5,h6
- {
-        font-family: "Love Ya Like A Sister", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
-   
-   
+ /* Brand colors */
+ :root {
+     --primary-color: #344d82;
+     --secondary-color: #b9cef1;
+     --accent-color: #f0e6ff;
+     --text-color: #333;
+     --hover-scale: 1.05;
+ }
+
+ body {
+     font-family: "Karla", sans-serif;
+     background: var(--accent-color);
+     color: var(--text-color);
+     margin: 0;
+     padding: 0;
+ }
+
+ /* Hero Section */
+ .hero-section {
+     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+     color: white;
+     padding: 6rem 2rem;
+ }
+
+ .hero-section h1 {
+     font-weight: 700;
+     font-size: 3.5rem;
+     margin-bottom: 1rem;
+ }
+
+ .hero-section p {
+     font-size: 1.25rem;
+     max-width: 600px;
+     margin-bottom: 2rem;
+     line-height: 1.5;
+ }
+
+ .btn-branding {
+     background-color: white;
+     color: var(--primary-color);
+     font-weight: 600;
+     padding: 0.75rem 2rem;
+     border-radius: 50px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .btn-branding:hover,
+ .btn-branding:focus {
+     background-color: var(--primary-color);
+     color: white;
+     text-decoration: none;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ /* Mini About Preview */
+ .about-preview {
+     background: white;
+     padding: 3rem 2rem;
+     margin-top: -4rem;
+     margin-bottom: 4rem;
+     border-radius: 15px;
+     box-shadow: 0 8px 20px rgba(52, 77, 130, 0.15);
+     max-width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+ }
+
+ .about-preview p {
+     font-size: 1.125rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ /* Hobbies Gallery */
+ .hobbies-gallery {
+     max-width: 900px;
+     margin: 0 auto 5rem auto;
+     text-align: center;
+ }
+
+ .hobbies-gallery h2 {
+     margin-bottom: 2rem;
+     color: var(--primary-color);
+     font-weight: 700;
+ }
+
+ .hobby-img {
+     border-radius: 15px;
+     box-shadow: 0 5px 15px rgba(52, 77, 130, 0.2);
+     cursor: pointer;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     max-width: 100%;
+ }
+
+ .hobby-img:hover,
+ .hobby-img:focus {
+     transform: scale(var(--hover-scale));
+     box-shadow: 0 10px 30px rgba(52, 77, 130, 0.4);
+     outline: none;
+ }
+
+ .hobby-caption {
+     margin-top: 0.75rem;
+     font-weight: 600;
+     color: var(--primary-color);
+ }
+
+ /* Featured Project */
+ .featured-project {
+     background: white;
+     max-width: 900px;
+     margin: 0 auto 5rem auto;
+     padding: 3rem 2rem;
+     border-radius: 15px;
+     box-shadow: 0 8px 20px rgba(52, 77, 130, 0.15);
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     align-items: center;
+ }
+
+ .featured-project img {
+     max-width: 300px;
+     border-radius: 15px;
+     box-shadow: 0 5px 15px rgba(52, 77, 130, 0.2);
+ }
+
+ .featured-project-content {
+     flex: 1 1 400px;
+ }
+
+ .featured-project-content h2 {
+     color: var(--primary-color);
+     font-weight: 700;
+     margin-bottom: 1rem;
+ }
+
+ .featured-project-content p {
+     font-size: 1.125rem;
+     line-height: 1.6;
+     margin-bottom: 1.5rem;
+ }
+
+ .btn-learn-more {
+     background-color: var(--primary-color);
+     color: white;
+     font-weight: 600;
+     padding: 0.75rem 2rem;
+     border-radius: 50px;
+     transition: background-color 0.3s ease;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     text-decoration: none;
+     display: inline-block;
+ }
+
+ .btn-learn-more:hover,
+ .btn-learn-more:focus {
+     background-color: var(--secondary-color);
+     color: var(--primary-color);
+     text-decoration: none;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+     outline: none;
+ }
+
+ /* Footer */
+ footer {
+     text-align: center;
+     padding: 2rem 1rem;
+     background: var(--primary-color);
+     color: white;
+     font-size: 0.9rem;
+ }
+
+ /* Responsive tweaks */
+ @media (max-width: 768px) {
+     .hero-section {
+         padding: 4rem 1.5rem;
+     }
+
+     .hero-section h1 {
+         font-size: 2.5rem;
+     }
+
+     .featured-project {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .featured-project img {
+         margin-bottom: 1.5rem;
+         max-width: 100%;
+     }
  
-    
-p{
-font-family: "Instrument Sans", sans-serif;
-    font-weight: medium;
-    font-size: 18px;
-    line-height: 30px;
-    color:black;
-
-}
-
-a{
-font-family: "Inter", sans-serif;
-}
-h2{
-    font-size: 50px;
-    color:#FEFCF8;
-}
-.bg-hero{
-    background-color: #344D82;}
-  
-.bg-projects{
- background-color: #344D82;
-}
-    
     
 
 .btn-branding{
@@ -56,7 +218,6 @@ h1{
        line-height: 1.1;
        font-weight: bold;
        text-align: center;
-
       
 }
 .hero {
@@ -70,13 +231,14 @@ h1{
     background-color: #192747;
    
 }
-/* Cute Modern Section */
+
+/* About page */
 .cute-section {
     background: linear-gradient(135deg, #FDE2F3, #E4D7FF, #D6F6FF);
     border-radius: 20px;
 }
 
-/* Main Title */
+
 .cute-title {
     font-size: 48px;
     font-weight: 700;
@@ -84,7 +246,7 @@ h1{
     margin-bottom: 15px;
 }
 
-/* Subtitle */
+
 .cute-subtitle {
     font-size: 28px;
     font-weight: 600;
@@ -92,7 +254,7 @@ h1{
     margin-bottom: 10px;
 }
 
-/* Paragraph */
+
 .cute-paragraph {
     background: #ffffffb8;
     padding: 25px;
@@ -103,7 +265,7 @@ h1{
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Cute rounded image */
+
 .cute-img {
     border: 6px solid #FFE6FA;
     padding: 5px;
@@ -124,10 +286,22 @@ h1{
 .hobby-card img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(108, 93, 211, 0.3);
-    /* Soft purple shadow */
     border-radius: 1rem;
-    /* keeps the rounded corners smooth on hover */
+
 }
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(108, 93, 211, 0.25);
+}
+
+
+
+
+
 @media (max-width:960px){
     p{text-align: center;}
 }

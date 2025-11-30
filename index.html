@@ -1,108 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Love+Ya+Like+A+Sister&display=swap"
-        rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 
 
-      
     <script src="https://kit.fontawesome.com/46059b2916.js" crossorigin="anonymous"></script>
-       <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/app.css">
+   
     <title>Document</title>
 </head>
 
 <body>
-   
-<div class="container-fluid bg-hero p-5">
-    <div class="row">
-        <div class="col-md-9">
-            <h1 class="mb-5 mt-5">Welcome to Virtual Karina's Portfolio</h1>
-            <p class="hero">Born and raised in NYC, Coding and creating is now my passion!</p>
-            <div>
-                <a href="#" class="btn btn-branding mt-4 p-3 mb-5">Come Journey with Me</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left text -->
+                <div class="col-md-7">
+                    <h1>Hi, I’m Karina — a front-end developer who loves turning ideas into beautiful, interactive
+                        experiences.</h1>
+                    <p>
+                        I blend creativity, clarity, and clean code to build digital spaces that feel warm, intuitive,
+                        and a little bit magical. Whether it’s a weather app, a world clock, or a playful AI tool, I
+                        approach every project with curiosity and heart. Based in NYC, I’m constantly learning,
+                        designing, and creating — one project at a time. ✨💻
+                    </p>
+                    <a href="my-work.html" class="btn btn-branding">Explore My World →</a>
+                </div>
+                <!-- Right logo -->
+                <div class="col-md-5 text-center">
+                    <img src="images/Virtual Karina Logo - Vibrant Blue and Coral.png" alt="Virtual Karina Logo"
+                        class="img-fluid rounded shadow" style="max-width: 300px" />
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="col-md-3">
-            <img src="images/Virtual Karina Logo - Vibrant Blue and Coral.png" class="img-fluid rounded shadow"
-                alt="logo" style="max-width: 250px;">
+    <!-- MINI ABOUT PREVIEW -->
+    <section class="about-preview mt-n5">
+        <p>
+            I’m a developer who believes every interface should feel welcoming, thoughtful, and human. I love crafting
+            layouts, exploring UI ideas, and bringing imagination into everyday tools. Coding lets me combine logic with
+            artistry — and that’s where I feel most at home. 🌈🌿🎀
+        </p>
+    </section>
+
+    <!-- HOBBIES GALLERY -->
+    <section class="hobbies-gallery">
+        <h2>What Makes Me Tick</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4">
+                <img src="images/outdoors.jpg" alt="Hiking in nature" class="hobby-img" tabindex="0" />
+                <div class="hobby-caption">🌿 Hiking & Nature Adventures</div>
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="images/inca.jpg" alt="Traveling the world" class="hobby-img" tabindex="0" />
+                <div class="hobby-caption">✈️ Traveling & Exploring</div>
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="images/virtual karina pink.jpg" alt="logo pink" class="hobby-img" tabindex="0" />
+                <div class="hobby-caption">🎨 Creativity & Design</div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-<!-- PROJECTS SECTION -->
-<div class="container-fluid bg-projects">
-
-    <!-- PROJECT 1 -->
-    <div class="row mb-5 gap-5">
-        <div class="col d-none d-lg-block">
-            <img src="images/Kind words AI.jpg" class="img-fluid shadow rounded p-4">
-        </div>
-
-        <div class="col">
-            <h2 class="mb-2 mt-3 p-4">Kind-Words-AI</h2>
-            <p class="mb-4 p-4 polished-text bg-light rounded shadow-sm border-start border-3 ps-4"
-                style="border-color: #B9CEF1;">
-                Kind words are helpful when you're feeling down or lost. But my app can generate
-                words for any topic that you desire. Are you hungry? Type in your favorite entrée.
-                Maybe you're sitting at your desk and it's too cold in the office — let my app comfort you.
-                Try it once and you'll be hooked. The possibilities are endless. ❤️
+    <!-- FEATURED PROJECT -->
+    <section class="featured-project">
+        <img src="images/Weather App.jpg" alt="Weather App screenshot" />
+        <div class="featured-project-content">
+            <h2>Weather App</h2>
+            <p>
+                Stay updated with real-time weather conditions across any location. This app provides a clean interface,
+                fast results, and an easy way to track temperatures, forecasts, and more. Simple, elegant, and extremely
+                useful. ❤️
             </p>
-            <a href="" class="btn btn-branding-type">Learn More</a>
+            <a href="my-work.html" class="btn-learn-more">View My Work →</a>
         </div>
-    </div>
+    </section>
 
-
-    <!-- PROJECT 2 -->
-    <div class="row mb-5 gap-5">
-        <div class="col d-none d-lg-block order-lg-2">
-            <img src="images/Weather App.jpg" class="img-fluid shadow rounded p-4">
-        </div>
-
-        <div class="col order-lg-1">
-            <h2 class="mb-2 mt-3 p-4">Weather App</h2>
-            <p class="mb-4 p-4 polished-text bg-light rounded shadow-sm border-start border-3 ps-4"
-                style="border-color: #B9CEF1;">
-                Stay updated with real-time weather conditions across any location.
-                This app provides a clean interface, fast results, and an easy way to track
-                temperatures, forecasts, and more. Simple, elegant, and extremely useful. ❤️
-            </p>
-            <a href="" class="btn btn-branding-type">Learn More</a>
-        </div>
-    </div>
-
-
-    <!-- PROJECT 3 -->
-    <div class="row mb gap-5">
-        <div class="col d-none d-lg-block">
-            <img src="images/World Clock.jpg" class="img-fluid shadow rounded p-4">
-        </div>
-
-        <div class="col">
-            <h2 class="mb-2 mt-3">World Clock</h2>
-            <p class="mb-4 p-4 polished-text bg-light rounded shadow-sm border-start border-3 ps-4"
-                style="border-color: #B9CEF1;">
-                The World Clock app helps you track time zones instantly.
-                Whether you're working with global teams or planning international travel,
-                this tool keeps everything in sync. Clean, user-friendly, and reliable. ❤️
-            </p>
-            <a href="" class="btn btn-branding-type">Learn More</a>
-        </div>
-    </div>
-
-</div>
+    <!-- FOOTER -->
+    <footer>
+        Made with ❤️ and late-night coding sessions by Karina
+    </footer>
 </body>
 </html>
