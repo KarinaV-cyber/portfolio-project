@@ -164,15 +164,6 @@
      outline: none;
  }
 
- /* Footer */
- footer {
-     text-align: center;
-     padding: 2rem 1rem;
-     background: var(--primary-color);
-     color: white;
-     font-size: 0.9rem;
- }
-
  /* Responsive tweaks */
  @media (max-width: 768px) {
      .hero-section {
@@ -283,7 +274,47 @@ h1{
     cursor: pointer;
 }
 
-.hobby-card img:hover {
+.hobby-card img:hover {.contact-info h3 {
+        color: var(--primary-color);
+        margin-top: 1.5rem;
+        font-weight: 600;
+    }
+
+    .contact-info p a {
+        color: var(--primary-color);
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-info p a:hover,
+    .contact-info p a:focus {
+        color: var(--secondary-color);
+        text-decoration: underline;
+        outline: none;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 3rem auto 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(52, 77, 130, 0.15);
+    }
+
+    .form-control:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 8px rgba(52, 77, 130, 0.3);
+    }
+
+
+
+    @media (max-width: 576px) {
+        body {
+            padding: 1rem;
+        }
+    }
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(108, 93, 211, 0.3);
     border-radius: 1rem;
@@ -298,10 +329,3 @@ h1{
     box-shadow: 0 12px 24px rgba(108, 93, 211, 0.25);
 }
 
-
-
-
-
-@media (max-width:960px){
-    p{text-align: center;}
-}

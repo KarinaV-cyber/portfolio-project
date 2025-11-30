@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/46059b2916.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/app.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mt-5">Let's Get In Touch! 📬</h1>
+
+        <div class="contact-info text-center">
+            <h3>Email</h3>
+            <p><a href="mailto:virtualkarina2553@gmail.com">virtualkarina2553@gmail.com</a></p>
+
+            <h3>Twitter</h3>
+            <p><a href="https://www.twitter.com/karina" target="_blank" rel="noopener noreferrer">@karina</a></p>
+
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/karina.codes" target="_blank"
+                    rel="noopener noreferrer">@karina.codes</a></p>
+        </div>
+
+        <!-- Optional Contact Form -->
+        <form class="contact-form" action="https://formspree.io/f/mayvkjrp" method="POST">
+            <h3 class="text-center mb-4" style="color: var(--primary-color);">Send me a message</h3>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" name="_replyto" placeholder="you@example.com"
+                    required />
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="4"
+                    placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-learn-more mb-5">Send Message</button>
+        </form>
+    </div>
+
+    
+
+ </body>
+
+</html>
