@@ -14,7 +14,16 @@
       margin: 0;
       padding: 0;
     }
-      
+        .logo-img {
+          max-width: 200px;
+        }
+    
+        @media (min-width: 768px) {
+          .logo-img {
+            max-width: 300px;
+          }
+        }
+
              /* 🌸 Soft Cute Navbar Background */
              .cute-navbar {
                background: linear-gradient(135deg, #B9CEF1 0%, #F6E8FF 50%, #FCECF5 100%);
